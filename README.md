@@ -2,7 +2,7 @@
 create a basic stop watch using operators such as .interval | .switchMapTo | .scan
 
 ## my refs
-http://reactivex.io/documentation/operators/scan.html
+http://reactivex.io/documentation/operators/scan.html\s\s
 https://egghead.io/lessons/rxjs-updating-data-with-scan#/tab-transcript
 
 examining the .scan() operator
