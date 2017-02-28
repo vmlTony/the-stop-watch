@@ -17,10 +17,10 @@ startInterval$
   
 The proper way to gather and collect data in RxJS is to use the scan operator.
 
-Scan works just like reduce in JavaScript arrays. 
-We take a function and initializer. 
-Our initializer is just going to be a count of zero or an object with a count of zero. 
-Then, that comes into this function as an accumulator.
+*Scan works just like reduce in JavaScript arrays. 
+*We take a function and initializer. 
+*Our initializer is just going to be a count of zero or an object with a count of zero. 
+*Then, that comes into this function as an accumulator.
 ```js
 .scan((acc)=>{},0)
 .scan((acc)=>{},{count: 0})
