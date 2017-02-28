@@ -51,5 +51,3 @@ I'll go ahead and save. I'll hit start. We go one, two, three. I'll hit stop, an
 + Then is going to be pushed into my subscribe and logged out...
 
 ![alt text](http://reactivex.io/documentation/operators/images/scanSeed.js.png)
-
-<a class="jsbin-embed" href="https://jsbin.com/piyopejitu/embed?html,js,console,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.41.3"></script>
