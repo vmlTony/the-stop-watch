@@ -34,3 +34,5 @@ I'll go ahead and save. I'll hit start. We go one, two, three. I'll hit stop, an
 Then, each time a new interval is pushed or you get a new tick, we start with this value which is this accumulator here.
 
 Then we run this function, which is just going return an object with a count on it. It's going to take that previous accumulator find account property, add one. Then is going to be pushed into my subscribe and logged out...
+
+![alt text](http://reactivex.io/documentation/operators/images/scanSeed.js.png)
