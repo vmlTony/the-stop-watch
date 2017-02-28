@@ -5,6 +5,9 @@ create a basic stop watch using operators such as .interval | .switchMapTo | .sc
 http://reactivex.io/documentation/operators/scan.html  
 https://egghead.io/lessons/rxjs-updating-data-with-scan#/tab-transcript
 
+## my jsbin
+https://jsbin.com/piyopejitu/edit?html,js,output  
+
 examining the .scan() operator
 ```js
 startInterval$
@@ -27,12 +30,26 @@ The proper way to gather and collect data in RxJS is to use the scan operator.
 ```
 
 
-When this function is called, I get this accumulator as this first argument. We'll just go ahead and return a new object with a property called "count," which is accumulator.count plus one. For something more advanced, you'll probably use object assign, but we just have one property for now.
+When this function is called, I get this accumulator as this first argument.  
+We'll just go ahead and return a new object with a property called "count," which is accumulator.count plus one. 
+```js
+  .scan((acc)=>{
+    return {count: acc.count + 1}
+  },{count: 0})
+```
+For something more advanced, you'll probably use *object assign*, but we just have one property for now.
 
-I'll go ahead and save. I'll hit start. We go one, two, three. I'll hit stop, and then hit start again, and re-continue five, six, seven. This now reads as clicking a start button, which switches to a timer that can stop when you click stop.
+I'll go ahead and save. I'll hit start. We go one, two, three. I'll hit stop, and then hit start again, and re-continue five, six, seven. 
 
-Then, each time a new interval is pushed or you get a new tick, we start with this value which is this accumulator here.
-
-Then we run this function, which is just going return an object with a count on it. It's going to take that previous accumulator find account property, add one. Then is going to be pushed into my subscribe and logged out...
++ This now reads as clicking a start button, 
++ which switches to a timer that can stop when you click stop.
++ Then, each time a new interval is pushed or you get a new tick, 
++ we start with this value which is this accumulator here.
++ Then we run this function, 
++ which is just going return an object with a count on it. 
++ It's going to take that previous accumulator find account property, add one. 
++ Then is going to be pushed into my subscribe and logged out...
 
 ![alt text](http://reactivex.io/documentation/operators/images/scanSeed.js.png)
+
+<a class="jsbin-embed" href="https://jsbin.com/piyopejitu/embed?html,js,console,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.41.3"></script>
